@@ -22,7 +22,7 @@ Para realizar a atividade foi seguido os seguintes passos:
 
 ## Deploy na Azure
 
-- Para fazer o deplou na Azure primeiro foi preciso criar um FunctionApp
+- Para fazer o deploy na Azure primeiro foi preciso criar um FunctionApp
 - Depois foi feito o deploy com o auxilio do vsCode
 
 ![alt text]({D60234FC-9340-4C11-B76E-1F3360CC6D99}.png)
@@ -33,3 +33,6 @@ Como foi deixado que o endpoint era de acesso anonimo, não precisou adicionar n
 
 ![alt text](endpointaz.png)
 ![alt text](endpointaz2.png)
+
+
+**📄Foi excluido o recurso logo após realizar a atividade para não gerar custos adicionais**
