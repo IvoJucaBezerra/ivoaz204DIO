@@ -1,38 +1,39 @@
-# DIO204-ValidaCPF
+# IVO - DIO204-ValidaCPF
 
 Atividade de hands-on do bootcamp da DIO AZ-204: Criando um Microsserviço Serverless para Validação de CPF
 
-Para realizar a atividade foi seguido os seguintes passos:
+Este repositório contém a solução para a atividade de criação de um microsserviço Serverless utilizando o Azure Functions para validar CPF.
 
-## Configuração do ambiente
+## Passos para realização da atividade
 
-- Foi configurado um github codespace com .net 8, e extensões do Azure e do Azure Functions
-- Feito login na Azure pelo vsCode
+### 1. Configuração do Ambiente
 
-## Projeto
+- Foi configurado um **GitHub Codespace** com **.NET 8**.
+- As extensões do **Azure** e **Azure Functions** foram instaladas no VS Code.
+- Realizado login no **Azure** através do **VS Code**.
 
-- Foi criado um projeto de exemplo de uma function simples do azure com um trigger http
-- Foi criado uma função para validar um CPF
-- Foi alterado a function para receber na requisição POST um cpf
-- O codigo então verifica se o cpf é valido e da uma resposta se é ou não é valido
+### 2. Criando o Projeto
 
-![alt text]({05215311-FC26-4A35-A417-F56B630B61F3}.png)
+- Criamos um projeto de exemplo de uma função simples do Azure com **trigger HTTP**.
+- Foi criada uma função para **validar o CPF**.
+- A função foi modificada para aceitar um **CPF** via requisição **POST**.
+- O código então realiza a validação do CPF e retorna uma resposta indicando se o CPF é válido ou não.
 
-![alt text]({F7BB438A-5CDA-401E-A565-2BEA58A4B3B1}.png)
+### 3. Deploy na Azure
 
-## Deploy na Azure
+- Foi criado um **FunctionApp** na plataforma Azure.
+- Realizado o deploy da função utilizando o **VS Code** com a extensão do Azure Functions.
 
-- Para fazer o deploy na Azure primeiro foi preciso criar um FunctionApp
-- Depois foi feito o deploy com o auxilio do vsCode
+### 4. Consumo do Endpoint
 
-![alt text]({D60234FC-9340-4C11-B76E-1F3360CC6D99}.png)
+- O endpoint foi configurado para **acesso anônimo**, portanto, não foi necessário adicionar autenticação para realizar chamadas.
+- O serviço pode ser acessado diretamente via requisição HTTP, enviando o CPF no corpo da requisição.
 
-## Consumo do endpoint
+## Como testar a aplicação
 
-Como foi deixado que o endpoint era de acesso anonimo, não precisou adicionar nada na chamada
+1. Envie uma requisição **POST** para o endpoint do serviço com um CPF no corpo da requisição.
+2. O serviço irá validar o CPF e retornar uma resposta indicando se ele é válido ou não.
 
-![alt text](endpointaz.png)
-![alt text](endpointaz2.png)
+---
 
-
-**📄Foi excluido o recurso logo após realizar a atividade para não gerar custos adicionais**
+Se precisar de mais detalhes sobre como rodar ou configurar o projeto, fique à vontade para abrir uma issue ou contribuir com melhorias.
